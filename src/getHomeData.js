@@ -2,7 +2,7 @@ import { ApolloClient, gql, InMemoryCache } from "@apollo/client";
 
 const GET_COUNTRIES = gql`
   query AmplienceContentQuery {
-    getAmplienceContent(deliveryKey: "test-ua-home-poc", previw: false) {
+    getAmplienceContent(deliveryKey: "test-ua-home-poc", previw: true) {
       page {
         slots {
           ... on Heromini {

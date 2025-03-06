@@ -5,7 +5,7 @@ import { getHomeData } from "@/src/getHomeData";
 export default async function Home() {
   const content = await getHomeData();
   const heroMini = content.getAmplienceContent.page.slots[0];
-  console.log("contentcontent= ", heroMini.media.url);
+  console.log("contentcontent toney= ", heroMini.media.url);
   return (
     <div>
       <h1>{heroMini.rawJson.content.teaser.teaserTitle}</h1>
